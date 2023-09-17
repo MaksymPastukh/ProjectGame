@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [sidebar-start] 80px [sidebar-end full-start] minmax(60px, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 140px) [col-end] ) [center-end] minmax(60px, 1fr) [full-end];
+}
+
+.sidebar {
+    padding-top: 26px;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / -1;
+    background: #425844;
+}
+
+.sidebar .btn {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /* отображаем курсор в виде руки при наведении; некоторые
+    считают, что необходимо оставлять стрелочный вид для кнопок */
+    cursor: pointer;
+}
+
+.header {
+    display: grid;
+    grid-column: full-start / col-end 6;
+    grid-template-rows: 1fr min-content minmax(100px, min-content) 1fr;
+    background: url("../assets/images/bg_images.png") center / cover no-repeat;
+    padding: 50px 50px 50px 50px;
+}
+
+.gamers {
+    grid-column: col-start 7 / full-end;
+    background: grey;
+}
+
+
+.game-info {
+    display: grid;
+    grid-column: center-start / center-end;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 30px 40px;
+    align-items: start;
+    padding: 150px 100px;
+    background: green;
+}
+
+.banner-images {
+    grid-column: full-start / col-end 4;
+    background: yellow
+}
+
+.banner-text {
+    grid-column: col-start 5 / full-end;
+    background: red;
+}
+
+.cards {
+    grid-column: center-start / center-end;
+    background: fuchsia;
+}
+
+.gallery {
+    grid-column: full-start / full-end;
+    background: orange;
+}
+
+.footer {
+    grid-column: full-start / full-end;
+    background: aqua;
+}
