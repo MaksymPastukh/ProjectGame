@@ -42,6 +42,24 @@
     grid-template-rows: 1fr min-content minmax(100px, min-content) 1fr;
     background: url("../assets/images/bg_images.png") center / cover no-repeat;
     padding: 50px 50px 50px 50px;
+}.header {
+    display: grid;
+    grid-column: full-start / col-end 6;
+    grid-template-rows: 1fr min-content minmax(100px, min-content) 1fr;
+    background: url("../assets/images/bg_images.png") center / cover no-repeat;
+    padding: 50px 50px 50px 50px;
+}.header {
+    display: grid;
+    grid-column: full-start / col-end 6;
+    grid-template-rows: 1fr min-content minmax(100px, min-content) 1fr;
+    background: url("../assets/images/bg_images.png") center / cover no-repeat;
+    padding: 50px 50px 50px 50px;
+}.header {
+    display: grid;
+    grid-column: full-start / col-end 6;
+    grid-template-rows: 1fr min-content minmax(100px, min-content) 1fr;
+    background: url("../assets/images/bg_images.png") center / cover no-repeat;
+    padding: 50px 50px 50px 50px;
 }
 
 .gamers {
